@@ -1,0 +1,921 @@
+@charset "utf-8";
+
+/*-----------------------------------------------
+* 01. Template
+* 02. Header
+* 03. Main Contents
+* 04. Footer
+-------------------------------------------------*/
+/*-----------------------------------------------
+01. Template
+-------------------------------------------------*/
+body {
+  /* width: 1200px;
+  max-width: 100%;
+  margin: 0 auto; */
+
+  background-color: #000;
+  color: #fff;
+  font-family: 游明朝, "Yu Mincho", YuMincho, "Hiragino Mincho ProN", "Hiragino Mincho Pro", HGS明朝E, メイリオ, Meiryo, serif;
+  font-size: 14px;
+  font-weight: normal;
+  letter-spacing: 0.07em;
+  line-height: 1.8;
+  word-wrap: break-word;
+}
+
+a {
+  color: #222;
+}
+
+a:hover {
+  text-decoration: none;
+}
+
+#fullWrap {
+ width: 1200px;
+  max-width: 100%;
+  margin: 0 auto;
+  position: relative;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+/*-----------------------------------------------
+02. Header
+-------------------------------------------------*/
+.topWrap {
+  background: url(../img/common/top_bockgroung.jpg) no-repeat center / cover;
+  width: 100%;
+  overflow: hidden;
+  padding: 0 0 90px;
+  position: relative;
+  margin: 0 auto;
+}
+
+.topWrap:after {
+  content: "";
+  background: url(../img/common/earth.png) no-repeat 0 0 / 100%;
+  width: 270px;
+  height: 270px;
+  position: absolute;
+  top: -80px;
+  right: -70px;
+  z-index: 0;
+}
+
+.headerWrap {
+  width: 100%;
+  margin: 0 auto;
+  position: relative;
+  z-index: 1;
+}
+
+.header_title {
+  padding-top: 20px;
+  margin: 0 auto 34px;
+  text-align: center;
+}
+
+.header_navListsWrap {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  justify-content: center;
+}
+
+.header_navListsWrap:before {
+  content: "";
+  background: url(../img/common/hnav_img_f.png) no-repeat 0 0 / 100%;
+  display: block;
+  width: 251px;
+  height: 86px;
+}
+
+.header_navListsWrap:after {
+  content: "";
+  background: url(../img/common/hnav_img_l.png) no-repeat 0 0 / 100%;
+  display: block;
+  width: 99px;
+  height: 86px;
+}
+
+.header_navLists {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+/* topMain */
+.topMain {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100%;
+  margin: 0 auto;
+}
+
+.topMain_text {
+  width: 40%;
+  padding: 30px 30px 0 30px;
+}
+
+.topMain_text p {
+  color: #fff;
+  font-size: 32px;
+  font-weight: bold;
+}
+
+.topMain_slideWrap {
+  width: 60%;
+}
+
+.topMain_slide {
+  height: 35vw;
+}
+
+
+/*-----------------------------------------------
+03. Main Contents
+-------------------------------------------------*/
+/*.mainWrap{
+    width: 100%;
+    margin: 0 auto;
+}*/
+/* Top Section */
+.topItemWrap {
+  background-color: #fff;
+  padding: 20px 0 90px;
+}
+
+.topItem_title {
+  color: #dcbc00;
+  font-size: 40px;
+  font-weight: bold;
+  margin-bottom: 10px;
+  text-align: center;
+}
+
+.topItem_Lists {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.topItem_Lists li {
+  width: 50%;
+}
+
+.topItem_Lists li a {
+  text-decoration: none;
+}
+
+.topItem_List_img {
+  display: block;
+  text-align: center;
+  padding: 0 10px;
+  /*    margin-bottom: 60px;*/
+}
+
+.topItem_List_title {
+  color: #fff;
+  font-size: 30px;
+  font-weight: bold;
+  margin-bottom: 40px;
+  padding: 20px 0;
+  text-align: center;
+  margin-top: 10px;
+}
+
+.topItem_List_title.bg_pink {
+  background-color: #e08aaa;
+}
+
+.topItem_List_title.bg_gold {
+  background-color: #d8ddaf;
+}
+
+.topItem_List_text {
+  color: #14306f;
+  font-size: 24px;
+  font-weight: bold;
+  text-align: center;
+}
+
+.topGiftType_title {
+  color: #fff;
+  font-size: 30px;
+  font-weight: bold;
+  padding: 20px 0;
+  text-align: center;
+}
+
+.topGiftType_title.bg_blue {
+  background-color: #227d90;
+}
+
+.topGiftType_title.bg_brown {
+  background-color: #812d27;
+}
+
+.topGiftType_title.bg_red {
+  background-color: #711844;
+}
+
+.topGiftType_title.bg_green {
+  background-color: #696c49;
+}
+
+.topGiftType_title.bg_green2 {
+  background-color: #44812d;
+}
+
+.topGiftType_Lists {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.topGiftType_Lists li {
+  width: calc(100% / 3);
+}
+
+.topGiftType_Lists li img {
+  width: 100%;
+  height: auto;
+}
+
+/* Flowergift */
+.flowerWrap {
+  background: #ffffff;
+}
+
+.topFlower {
+  width: 100%;
+  padding: 200px 25px;
+  margin: 0 auto;
+  background-image: url(../img/flower/main_img_new.png);
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: contain;
+  margin-left: auto;
+  margin-right: auto;
+  /*  border: 1px solid red;*/
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.topFlower h2 {
+  color: #fff;
+  font-size: 60px;
+  font-weight: bold;
+  text-shadow: 0 0 10px rgba(0, 0, 0, 1);
+}
+
+.topFlower_text {
+  color: #ffff6d;
+  font-size: 30px;
+  font-weight: bold;
+  text-align: center;
+}
+
+.flower_secTop {
+  background-color: #fff;
+  padding: 30px;
+}
+
+.flower_secTop_text {
+  color: #4b4a44;
+  font-size: 24px;
+  font-weight: bold;
+  line-height: 1.4;
+}
+
+.flowerType_title {
+  color: #fff;
+  font-size: 30px;
+  font-weight: bold;
+  padding: 20px 0;
+  text-align: center;
+}
+
+.flowerType_title > span {
+  margin-right: 30px;
+}
+
+.flowerType_title.bg_blue {
+  background-color: #90e9f0;
+}
+
+.flowerType_title.bg_orange {
+  background-color: #fec582;
+}
+
+.flowerType_title.bg_pink {
+  background-color: #fd828f;
+}
+
+.flowerType_title.bg_pink2 {
+  background-color: #e08aaa;
+}
+
+.flowerType_title.bg_gold {
+  background-color: #d8ddaf;
+}
+
+.flowerType_title.bg_green {
+  background-color: #b2f090;
+}
+
+.flowerType_Lists {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+  -webkit-flex-wrap: wrap;
+  flex-wrap: wrap;
+}
+
+.flowerType_Lists > li {
+  background-color: #fff;
+  width: calc(100% / 4);
+}
+
+.flowerType_List_img {
+  width: 100%;
+  position: relative;
+}
+
+.flowerType_List_img img {
+  width: 100%;
+  height: auto;
+}
+
+.flowerType_List_text {
+  padding: 10px;
+}
+
+.flowerType_List_text_title {
+  color: #000;
+  font-size: 20px;
+  font-weight: bold;
+  text-align: center;
+}
+
+.flowerType_List_text_sense {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.flowerType_List_text_sense_t {
+  color: #000;
+  font-size: 15px;
+  font-weight: bold;
+  white-space: nowrap;
+}
+
+.flowerType_List_text_sense_lists {
+  color: #000;
+  font-size: 15px;
+}
+
+/* Crystal */
+
+
+.topCrystal {
+  width: 100%;
+  padding: 200px 25px;
+  background-image: url(../img/crystal/main_img.jpg);
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: contain;
+  margin: 0 auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.topCrystal h2 {
+  color: #fff;
+  font-size: 60px;
+  font-weight: bold;
+  text-shadow: 0 0 10px rgba(0, 0, 0, 1);
+}
+
+.crystal_secTop {
+  background-color: #fff;
+  padding: 30px;
+}
+
+.crystal_secTop_text {
+  color: #4b4a44;
+  font-size: 24px;
+  font-weight: bold;
+  line-height: 1.4;
+}
+
+.crystal_secTop_title {
+  color: #4b4a44;
+  font-size: 28px;
+  font-weight: bold;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.crystal_sec1 {
+  background-color: #071437;
+}
+
+.crystalType_Lists {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+  -webkit-flex-wrap: wrap;
+  flex-wrap: wrap;
+  justify-content: center;
+  /* width: 1020px; */
+  margin: 0 auto;
+}
+
+.crystalType_Lists li {
+  background: url(../img/crystal/crystal_bg.jpg) no-repeat 0 0 / 100%;
+  width: calc(100% / 3);
+  height: calc(100% / 8);
+  position: relative;
+}
+
+.crystalType_List_img {
+  padding: 15%;
+  overflow: hidden;
+  /* position: absolute;
+  margin: auto;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0; */
+}
+
+.crystalType_List_img img {
+  display: block;
+  width: 100%;
+  height: auto;
+  border-radius: 50%;
+}
+
+/* Concept */
+.conceptWrap {
+  background: url(../img/concept/concept_bg.jpg) no-repeat center / cover;
+  width: 100%;
+  padding: 80px;
+  position: relative;
+  width: 100%;
+  margin: 0 auto;
+}
+
+.concept_title {
+  color: #fff;
+  font-size: 38px;
+  font-weight: bold;
+  margin-bottom: 30px;
+}
+
+.concept_text {
+  color: #fff;
+  font-size: 26px;
+  font-weight: bold;
+}
+
+.concept_text.end {
+  margin-top: 70px;
+  text-align: right;
+}
+
+/*-----------------------------------------------
+04. Footer
+-------------------------------------------------*/
+.footer {
+  font-family: 'Hiragino Kaku Gothic Pro', 'ヒラギノ角ゴ Pro W3', 'メイリオ', Meiryo, 'ＭＳ Ｐゴシック', sans-serif;
+}
+
+.footer:before {
+  content: "";
+  background-color: #8bced3;
+  display: block;
+  width: 100%;
+  height: 110px;
+}
+
+0 .footer_top:before {
+  content: "";
+  background-color: #fff;
+  display: block;
+  width: 100%;
+  height: 50px;
+}
+
+.pnkzListsWrap {
+  background-color: #f0f3f5;
+}
+
+.pnkzLists {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100%;
+  margin: 0 auto;
+  padding: 20px 20px;
+}
+
+.pnkzLists li {
+  color: #575b5e;
+  font-size: 12px;
+  margin-right: 6px;
+}
+
+.pnkzLists li:after {
+  content: "/";
+  margin-left: 6px;
+}
+
+.pnkzLists li:last-child:after {
+  content: none;
+}
+
+.pnkzLists li a {
+  text-decoration: none;
+}
+
+.pnkzLists li a:hover {
+  text-decoration: underline;
+}
+
+.footNavListsCont {
+  background-color: #8ecfe4;
+}
+
+.footNavListsIn {
+  width: 100%;
+  margin: 0 auto;
+  padding: 30px 20px;
+  position: relative;
+}
+
+.footNavListsWrap {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.footNavLists_one {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-right: 50px;
+  margin-bottom: 20px;
+}
+
+.footNavLists_one_title {
+  color: #c3d4dd;
+  font-size: 12px;
+  margin-right: 20px;
+  white-space: nowrap;
+}
+
+.footNavLists li {
+  color: #fff;
+  font-size: 12px;
+  margin-bottom: 4px;
+}
+
+.footNavLists li a {
+  color: #fff;
+  text-decoration: none;
+}
+
+.footNavLists li a:hover {
+  text-decoration: underline;
+}
+
+.footNavListsIn_snsLists {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  position: absolute;
+  top: 26px;
+  right: 16px;
+}
+
+.footNavListsIn_snsLists li {
+  margin-right: 4px;
+}
+
+.footNavListsIn_snsLists li:last-child {
+  margin-right: 0;
+}
+
+.footNavListsIn_copyRight {
+  color: #fff;
+  display: block;
+  font-size: 10px;
+  position: absolute;
+  right: 20px;
+  bottom: 30px;
+}
+
+.footer_bottom {
+  background-color: #afe6e6;
+}
+
+.footer_bottom:before {
+  content: "";
+  background-color: #fff;
+  display: block;
+  width: 100%;
+  height: 50px;
+}
+
+.footer_bottomIn {
+  width: 100%;
+  margin: 0 auto;
+  padding: 40px 20px;
+}
+
+.footer_bottom_left {
+  float: left;
+}
+
+.footer_bottom_right {
+  float: right;
+}
+
+.footer_bottom_title {
+  color: #3b4043;
+  font-size: 18px;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+
+.footer_bottom_text {
+  color: #3b4043;
+  font-size: 12px;
+}
+
+.footer_formWrap {
+  margin-top: 10px;
+}
+
+.footer_formWrap form {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+input {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  outline: 0;
+}
+
+.footer_formWrap_input {
+  max-width: 300px
+}
+
+.footer_formWrap_input input {
+  background-color: #fff;
+  border: 1px solid #979797;
+  font-size: 15px;
+  font-weight: bold;
+  width: 100%;
+  height: 100%;
+  padding: 10px 14px;
+}
+
+.footer_formWrap_submit input {
+  background-color: #004bb1;
+  color: #fff;
+  font-size: 15px;
+  font-weight: bold;
+  width: 100%;
+  height: 100%;
+  padding: 10px 14px;
+}
+
+.footer_bottom2 {
+  background-color: #3b4043;
+}
+
+.footer_bottom2In {
+  width: 100%;
+  margin: 0 auto;
+  padding: 10px 20px;
+}
+
+.footer_bottom2_copyRight {
+  color: #fff;
+  font-size: 12px;
+  float: left;
+  padding-top: 6px;
+}
+
+.footer_bottom2_snsLists {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  float: right;
+}
+
+
+/* レスポンシブ */
+@media screen and (max-width: 1100px) {
+  .topMain {
+      display: block;
+  }
+  
+  .topMain_text {
+      width: 100%;
+      padding: 30px 30px 0 30px;
+      text-align: center;
+  }
+  
+  .topMain_slideWrap {
+      width: 100%;
+      height: 100%;
+      text-align: center;
+  }
+  
+  .topMain_slide {
+      margin: 0 auto;
+      width: 100%;
+      height: auto;
+  }
+  
+  .topItem_List_text {
+      font-size: 19px;
+  }
+  
+  .footNavLists_one {
+      display: block;
+      margin-right: 50px;
+      margin-bottom: 20px;
+  }
+  
+  .conceptWrap {
+      padding: 80px 50px;
+  }
+
+  .topFlower {
+    padding:100px 25px;
+  }
+  
+  .topFlower_text {
+    margin-top: 20px;
+  }
+  
+  .topCrystal {
+    padding:100px 25px;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .topWrap:after {
+    width: 100px;
+    height: 100px;
+    position: absolute;
+    top: -28px;
+    right: -28px;
+  }
+
+  .header_title img {
+    width: 280px;
+  }
+
+  .topMain_text {
+      padding: 30px 10px 0 10px;
+  }
+
+  .topMain_text p {
+      font-size: 20px;
+  }
+  
+  .topItem_title {
+      font-size: 25px;
+  }
+  
+  .topItem_List_title {
+      font-size: 20px;
+  }
+  
+  .topItem_List_text {
+      font-size: 18px;
+  }
+  
+  .topItem_List_text br {
+      display: none;
+  }
+  
+  .topGiftType_title {
+      font-size: 25px;
+  }
+
+  .footNavListsWrap {
+      justify-content: space-between;
+      flex-wrap: wrap;
+  }
+  
+  .footNavLists_oneWrap {
+      margin-bottom: 10px;
+  }
+  
+  .footNavLists_one {
+      margin-right: 10px;
+  }
+  
+  .footNavListsIn_snsLists {
+      position: static;
+  }
+  
+  .footer_bottom_left {
+      float: none;
+  }
+  .footer_bottom_right {
+      margin-top: 20px;
+      float: none;
+  }
+
+  .conceptWrap {
+      padding: 30px;
+  }
+
+  .concept_title {
+      font-size: 24px;
+  }
+
+  .concept_text {
+      font-size: 18px;
+  }
+
+  .concept_text.end {
+      margin-top: 40px;
+  }
+
+  .topFlower {
+    padding: 70px 0px;
+  }
+
+  .topFlower h2 {
+    font-size: 31px;
+  }
+  
+  .topFlower_text {
+    font-size: 18px;
+  }
+
+  .flower_sec1 {
+    padding-top: 30px;
+  }
+  
+  .flower_secTop_text {
+    font-size: 16px;
+    line-height: 1.75;
+  }
+  
+  .flowerType_title {
+    font-size: 21px;
+  }
+  
+  .flowerType_Lists {
+    display: block;
+  }
+  
+  .flowerType_Lists > li {
+    width: 100%;
+  }
+
+  .topCrystal {
+    padding: 70px 0px;
+  }
+
+  .topCrystal h2 {
+    font-size: 31px;
+  }
+
+  .crystal_secTop_title {
+    font-size: 20px;
+  }
+  
+  .crystal_secTop_text {
+    font-size: 16px;
+    line-height: 1.75;
+  }
+
+  .crystalType_Lists li {
+    width: 50%;
+  }
+}
